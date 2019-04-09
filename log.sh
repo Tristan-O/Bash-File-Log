@@ -58,7 +58,7 @@ llog() {
     fi
     touch $LOGPATH$TEMP_CURR
 
-    for subfile in $1*; do
+    for subfile in $1/*; do
       [[ -e $subfile ]] || continue
       echo "##########################################################################################################" >> "$LOGPATH$TEMP_CURR"
       readlink -f $subfile >> "$LOGPATH$TEMP_CURR"
