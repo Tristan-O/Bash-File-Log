@@ -3,7 +3,7 @@
 logset() {
   TEMP_CURR=recent.log
   TEMP_PREV=all.log
-  if [ -f "$1" ]
+  if [ -e "$1" ]
   then
     if [ -f $LOGPATH$TEMP_CURR ]
     then
@@ -32,7 +32,7 @@ logset() {
 }
 
 log() {
-  if [ -f "$1" ]
+  if [ -e "$1" ]
   then
     echo 'This log was last updated on:'
     getfattr --only-values -e text -n user.logUpdateTime $1
