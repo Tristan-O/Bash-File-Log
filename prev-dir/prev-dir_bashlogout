@@ -1,0 +1,4 @@
+# !/bin/bash
+
+#This file (or line of code) should be sourced in ~/.bash_logout
+pwd > ~/.storepwd

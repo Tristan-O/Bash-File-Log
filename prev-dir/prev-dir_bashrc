@@ -1,0 +1,5 @@
+# !/bin/bash
+
+#This file (or lines) should be sourced (or copy/pasted) into ~/.bashrc
+cd "$(<~/.storepwd)" #go to directory when last exited
+echo "" > ~/.storepwd
